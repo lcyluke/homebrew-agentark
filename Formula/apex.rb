@@ -16,8 +16,8 @@ class Apex < Formula
   end
 
   def post_install
-    # Quick verification
-    version_check = Utils.popen_read(bin/"apex", "--version").strip
+    # Quick verification (use libexec path — bin symlink may not exist yet)
+    version_check = Utils.popen_read(libexec/"bin/apex", "--version").strip
     if version_check.include?("0.5.0")
       ohai "✅ Apex v0.5.0 installed successfully!"
       puts "   #{version_check}"
