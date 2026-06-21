@@ -1,8 +1,8 @@
 class Agentark < Formula
-  desc "⚡ Multi-Agent Operating System — one person, infinite capacity"
-  homepage "https://github.com/lcyluke/apex"
-  url "https://github.com/lcyluke/apex/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "964620d4bf84438749c4b88627a8e27c8558d4181c4e4d5b1a0dba5d60582218"
+  desc "⚡ AgentArk — Multi-Agent Operating System. One person, infinite capacity."
+  homepage "https://github.com/lcyluke/agentark"
+  url "https://github.com/lcyluke/agentark/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "51b47bd8cd5bbf35337d935a48190f60f2cc2bcfebec1f4452a0076f4ce250d0"
   license "MIT"
 
   depends_on "python@3.12"
@@ -25,9 +25,11 @@ class Agentark < Formula
     end
     puts ""
     puts "Quickstart:"
-    puts "  agentark tutorial         Interactive walkthrough"
-    puts "  agentark fleet init       Create profiles + launch fleet"
-    puts "  agentark doctor           System diagnostics"
+    puts "  agentark tutorial              Interactive walkthrough"
+    puts "  agentark fleet init            Create profiles + launch fleet"
+    puts "  agentark fleet lan discover    Find other Macs on LAN"
+    puts "  agentark fleet dispatch -h     Resource-aware task dispatch"
+    puts "  agentark doctor                System diagnostics"
     puts ""
   end
 
@@ -38,16 +40,18 @@ class Agentark < Formula
 
   def caveats
     <<~EOS
-      ⚡ AgentArk — Multi-Agent Operating System
+      ⚓ AgentArk — Multi-Agent Operating System
+      46 agents, 30 commands, one CLI.
 
       Quickstart:
-        agentark tutorial         Interactive 5-step walkthrough
-        agentark fleet init       Create profiles + launch fleet (one-time)
-        agentark fleet start      Start 7 dev agents in tmux windows
-        agentark doctor           System diagnostics
+        agentark tutorial              Interactive 5-step walkthrough
+        agentark fleet init            Create profiles + launch fleet
+        agentark fleet lan discover    Find other Macs on LAN
+        agentark fleet dispatch -h     Resource-aware task dispatch
+        agentark doctor                System diagnostics
 
       Works on macOS, Linux, and Windows (WSL).
-      Docs: https://github.com/lcyluke/apex
+      Docs: https://github.com/lcyluke/agentark
     EOS
   end
 end
