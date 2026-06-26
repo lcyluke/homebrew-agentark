@@ -1,8 +1,8 @@
 class Apex < Formula
   desc "⚡ Multi-Agent Operating System — one person, infinite capacity"
   homepage "https://github.com/lcyluke/agentark"
-  url "https://github.com/lcyluke/agentark/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "ee953a9caec91bde3220c10e78ab025e0777036028ef04f1974edf638a32c955"
+  url "https://github.com/lcyluke/agentark/archive/refs/tags/v0.5.1.tar.gz"
+  sha256 "403f1dd4589c8ee155aa82f79b520d7d7da8bf3e07aa88d64fae23e6a9d9aed1"
   license "MIT"
 
   depends_on "python@3.12"
