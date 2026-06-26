@@ -2,7 +2,7 @@ class Agentark < Formula
   desc "⚡ AgentArk — Multi-Agent Operating System. One person, infinite capacity."
   homepage "https://github.com/lcyluke/agentark"
   url "https://github.com/lcyluke/agentark/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "403f1dd4589c8ee155aa82f79b520d7d7da8bf3e07aa88d64fae23e6a9d9aed1"
+  sha256 "d43f223892c2b6e52c63297f476d9c0e001fb1db7b6912b052dcf31c99ef199a"
   license "MIT"
 
   depends_on "python@3.12"
